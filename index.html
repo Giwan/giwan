@@ -86,7 +86,7 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 300px repeat(3, 1fr);
+        grid-template-rows: 300px repeat(2, 1fr);
       }
 
       .page > header {
@@ -106,18 +106,18 @@
         grid-column: 1 / span 8;
       }
 
-      .experience + aside {
+      main.experience + aside {
         grid-column: span 4 / -1;
-        grid-row: span 3 / -1;
+        /* grid-row: span 3 / -1; */
         background-color: var(--color-gray);
       }
 
       .experience > section {
-        margin-bottom: var(--unit);
+        margin-bottom: calc(var(--unit) * 3);
         padding: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: calc(var(--unit) * 4) 1fr;
       }
 
       .experience header h3 {
@@ -135,7 +135,7 @@
         padding: 0;
       }
 
-      .experience main section aside {
+      .experience section aside {
         color: var(--color-secondary);
         font-family: "Roboto Condensed";
         margin-left: var(--unit);
@@ -143,6 +143,20 @@
 
       .experience > section header {
         grid-column: span 2;
+      }
+
+      .experience hr {
+        display: inline-block;
+        width: 50%;
+        background-color: var(--color-secondary);
+      }
+
+      .experience hr ~ section > header {
+        color: var(--color-secondary);
+      }
+
+      .experience hr ~ section {
+        margin-bottom: 0;
       }
 
       /* -------- page aside ----------- */
@@ -159,12 +173,19 @@
         padding: 0;
         margin: 0;
         list-style: none;
+      }
+      .skills {
+        padding: 0;
+        margin: 0;
+        list-style: none;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
       }
 
-      .skills-2 {
+      ul.skills-2 {
         display: block;
+        color: var(--color-secondary);
+        margin-top: var(--unit);
       }
 
       .skills-2 li {
@@ -287,11 +308,36 @@
             </ul>
           </aside>
         </section>
+        <hr />
+        <section>
+          <header>
+            <h2>Developer</h2>
+            <h3>
+              Bureau BlauwGeel | Utrecht, The Netherlands Feb 2014 - Aug 2014
+            </h3>
+          </header>
+        </section>
+        <section>
+          <header>
+            <h2>CoFounder - Developer</h2>
+            <h3>
+              Questionise | Utrecht, The Netherlands 2012 - 2014
+            </h3>
+          </header>
+        </section>
+        <section>
+          <header>
+            <h2>SAP Technical Consultant</h2>
+            <h3>
+              Accenture | Various Euro countries 2004 - 2012
+            </h3>
+          </header>
+        </section>
       </main>
       <aside class="page-aside">
         <section>
-          <h4>Skills</h4>
-          <ul>
+          <h4>Tech skills</h4>
+          <ul class="skills">
             <li>ReactJS</li>
             <li>Redux</li>
             <li>NodeJS</li>
@@ -315,6 +361,8 @@
             <li>git (Bitbuket, Github, Gitlab)</li>
           </ul>
         </section>
+
+        <h4>Language skills</h4>
         <section class="language">
           <ul>
             <li>English & Dutch, fluent.</li>
