@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="giwan, persaud, resume, not" name="keywords" />
+    <meta content="The online resume of Giwan Persaud." name="description" />
+    <meta content="Resume / CV Giwan Persaud" name="title" />
+    <title>Resume / CV Giwan Persaud</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --unit: 16px;
+        --color-primary: #1a1a1a;
+        --color-secondary: #797979;
+        --color-gray: #e5e5e5;
+      }
+
+      html,
+      body,
+      p {
+        padding: 0;
+        margin: 0;
+        color: var(--color-primary);
+        font-family: "Roboto", "Helvetica", "sans-serif";
+        font-size: var(--unit);
+      }
+
+      p,
+      article {
+        line-height: 1.35em;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Roboto Condensed", "Roboto", "sans-serif";
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 800;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+      }
+
+      h3 {
+        color: var(--color-secondary);
+      }
+
+      h4 {
+        text-transform: uppercase;
+        margin-bottom: calc(var(--unit) / 2);
+        color: var(--color-secondary);
+        font-weight: 300;
+        display: inline-block;
+        border-bottom: 1px solid var(--color-secondary);
+      }
+
+      address,
+      a {
+        text-decoration: none;
+        color: var(--color-primary);
+        font-style: normal;
+      }
+
+      h2 + address {
+        margin-top: var(--unit);
+      }
+
+      h2 + address + p {
+        color: var(--color-secondary);
+      }
+
+      .page {
+        border: var(--unit) solid transparent;
+        border-top: 0;
+        max-width: calc(var(--unit) * 50);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 300px repeat(3, 1fr);
+      }
+
+      .page > header {
+        grid-column: 1 / span 8;
+        padding-top: var(--unit);
+      }
+
+      .page > header + aside {
+        grid-column: span 4 / -1;
+        background-color: var(--color-gray);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .experience {
+        grid-column: 1 / span 8;
+      }
+
+      .experience + aside {
+        grid-column: span 4 / -1;
+        grid-row: span 3 / -1;
+        background-color: var(--color-gray);
+      }
+
+      .experience > section {
+        margin-bottom: var(--unit);
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+
+      .experience header h3 {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+
+      .experience > section ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .experience section ul li {
+        margin: 0;
+        padding: 0;
+      }
+
+      .experience main section aside {
+        color: var(--color-secondary);
+        font-family: "Roboto Condensed";
+        margin-left: var(--unit);
+      }
+
+      .experience > section header {
+        grid-column: span 2;
+      }
+
+      /* -------- page aside ----------- */
+
+      .page-aside {
+        padding: 0 var(--unit);
+      }
+
+      .page-aside section {
+        margin-bottom: var(--unit);
+      }
+
+      .page-aside ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .skills-2 {
+        display: block;
+      }
+
+      .skills-2 li {
+        display: inline-block;
+      }
+
+      /* ------------EDU------------ */
+
+      .education h1 {
+        font-size: 1.25rem;
+      }
+      .education h2 {
+        margin-top: calc(var(--unit) / 2);
+        font-weight: 300;
+        font-size: 1rem;
+      }
+
+      .education section {
+        margin-bottom: var(--unit);
+      }
+
+      .education ul {
+        display: block;
+        margin-top: var(--unit);
+        color: var(--color-secondary);
+      }
+      .education li {
+        display: inline-block;
+      }
+      .education li:not(:last-child):after {
+        content: ",";
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <h1>Sr. Front-end Developer</h1>
+        <h2>Giwan Persaud</h2>
+        <address>
+          <a href="mailto:giwan.persaud@gmail.com">giwan.persaud@gmail.com</a>
+          <a
+            href="tel:+3100000000"
+            alt="duplicate even # to get correct telephone number"
+            >+31 000000000</a
+          >
+          <p>
+            <span class="marker">Xxxxxstraat 1, 1111 XX</span> Amsterdam, The
+            Netherlands
+          </p>
+        </address>
+        <p>Dutch national born October 10th 1980, <br />Living in Amsterdam</p>
+      </header>
+      <aside>
+        profile photo
+      </aside>
+      <main class="experience">
+        <h4>Experience</h4>
+        <section>
+          <header>
+            <h2>Senior Front-end developer</h2>
+            <h3>
+              Weeronline.nl | Amsterdam, The Netherlands Oct 2019 - present
+            </h3>
+          </header>
+          <article>
+            Support main site, A/B test new features to improve ad revenue.
+            Investigate loading performance & suggest optimizations
+          </article>
+          <aside>
+            <ul>
+              <li>ReactJS & NodeJS</li>
+              <li>Page speed investigation</li>
+              <li>Server Side Rendering</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <header>
+            <h2>Lead Front-end developer</h2>
+            <h3>
+              EDIA.nl | Amsterdam, The Netherlands Sep 2015 - Jul 2019
+            </h3>
+          </header>
+          <article>
+            Architect & develop newsreader for language learners. Coach juniors.
+            Liase with backend, AI and DevOps teams. Proud achievement:
+            papyrus.edia.nl (It also shows off my landing page design)
+          </article>
+          <aside>
+            <ul>
+              <li>ReactJS & NodeJS</li>
+              <li>Chrome extension (react)</li>
+              <li>Docker & Kubernetes</li>
+              <li>Scrum, Jira & Coaching</li>
+              <li>Progressive Web App</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <header>
+            <h2>Founder - Fullstack developer</h2>
+            <h3>
+              Mytoori.com | Amsterdam, The Netherlands Sep 2014 - present
+            </h3>
+          </header>
+          <article>
+            Develop iOS app (Objective-C), Build book management system using
+            React, NodeJS & MongoDB. Coordinate Product marketing. Liase with
+            investors. Explore marketing and advertising opportunities.
+          </article>
+          <aside>
+            <ul>
+              <li>ReactJS & NodeJS</li>
+              <li>MongoDB & Mongoose</li>
+              <li>Progressive Web App</li>
+              <li>Trello Product Management</li>
+              <li>Hosting, Email & DNS</li>
+            </ul>
+          </aside>
+        </section>
+      </main>
+      <aside class="page-aside">
+        <section>
+          <h4>Skills</h4>
+          <ul>
+            <li>ReactJS</li>
+            <li>Redux</li>
+            <li>NodeJS</li>
+            <li>PWA</li>
+            <li>Jest</li>
+            <li>Sass</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>ExpressJS</li>
+            <li>Docker</li>
+            <li>MongoDB</li>
+            <li>git</li>
+            <li>GatsbyJS</li>
+          </ul>
+
+          <ul class="skills-2">
+            <li>Objective-c</li>
+            <li>Google apps for business</li>
+            <li>Hosting (Heroku, Zeit, Netlify)</li>
+            <li>DNS Management</li>
+            <li>git (Bitbuket, Github, Gitlab)</li>
+          </ul>
+        </section>
+        <section class="language">
+          <ul>
+            <li>English & Dutch, fluent.</li>
+            <li>French, intermediate.</li>
+          </ul>
+        </section>
+        <section class="education">
+          <h4>Education</h4>
+          <section>
+            <h1>MSc. Web Marketing and Project management 2011</h1>
+            <h2>SKEMA Business school - Sophia Antipolis, France</h2>
+            <ul>
+              <li>Project management</li>
+              <li>Planning</li>
+              <li>Stakeholder management</li>
+              <li>PMI Certification</li>
+              <li>Search engine marketing</li>
+              <li>Social media</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Bachelor Information Engineering 2004</h1>
+            <h2>Hogeschool van Amsterdam - Amsterdam, The Netherlands</h2>
+            <ul>
+              <li>Project management</li>
+              <li>Java</li>
+              <li>UML</li>
+              <li>Communication</li>
+              <li>Object Oriented Design</li>
+              <li>Relational Databases</li>
+            </ul>
+          </section>
+        </section>
+      </aside>
+    </div>
+  </body>
+</html>
