@@ -105,7 +105,6 @@
 
       .page > header + aside {
         grid-column: span 4 / -1;
-        background-color: var(--color-gray);
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -122,7 +121,6 @@
 
       main.experience + aside {
         grid-column: span 4 / -1;
-        background-color: var(--color-gray);
       }
 
       .experience > section {
@@ -161,7 +159,7 @@
       .experience hr {
         display: inline-block;
         width: 50%;
-        background-color: var(--color-secondary);
+        border: 1px solid var(--color-gray);
       }
 
       .experience hr ~ section > header {
@@ -205,7 +203,16 @@
         display: inline-block;
       }
 
+      /* ------------language------------ */
+      .language {
+        margin-top: calc(var(--unit) * 6);
+      }
+
       /* ------------EDU------------ */
+
+      .education {
+        margin-top: calc(var(--unit) * 4);
+      }
 
       .education h1 {
         font-size: 1.25rem;
@@ -242,18 +249,18 @@
         padding: 0;
         list-style: none;
         display: grid;
-        grid-gap: 1px;
         grid-template-columns: repeat(3, 1fr);
-        font-size: 1.5em;
         font-family: "Roboto condensed";
         background-color: var(--color-gray);
-        border: 1px solid var(--color-gray);
+        border-top: 1px solid var(--color-gray);
+        border-bottom: 1px solid var(--color-gray);
+        font-size: 1.5em;
       }
 
       footer li {
         display: block;
         background-color: white;
-        text-align: center;
+        text-align: left;
         padding: calc(var(--unit) / 2);
       }
 
@@ -294,7 +301,14 @@
           <header>
             <h2>Senior Front-end developer</h2>
             <h3>
-              Weeronline.nl | Amsterdam, The Netherlands Oct 2019 - present
+              <a
+                target="_blank"
+                href="https://weeronline.nl"
+                alt="weeronline weather site"
+              >
+                Weeronline.nl
+              </a>
+              | Amsterdam, The Netherlands Oct 2019 - present
             </h3>
           </header>
           <article>
@@ -420,8 +434,8 @@
           </ul>
         </section>
 
-        <h4>Language skills</h4>
         <section class="language">
+          <h4>Language skills</h4>
           <ul>
             <li>English & Dutch, fluent.</li>
             <li>French, intermediate.</li>
@@ -464,7 +478,7 @@
                 target="_blank"
                 alt="online book shop for bilingual books"
                 href="https://mytoori.com"
-                >mytoori.com</a
+                >Mytoori.com</a
               >
             </li>
             <li>
@@ -472,7 +486,7 @@
                 target="_blank"
                 alt="blog for mytoori"
                 href="https://blog.mytoori.com"
-                >blog.mytoori.com</a
+                >blog.Mytoori.com</a
               >
             </li>
             <li>
