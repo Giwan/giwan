@@ -71,6 +71,15 @@
         font-style: normal;
       }
 
+      address p {
+        line-height: 1.75em;
+      }
+
+      .marker {
+        background-color: var(--color-gray);
+        color: var(--color-gray);
+      }
+
       h2 + address {
         margin-top: var(--unit);
       }
@@ -264,7 +273,7 @@
           <a
             href="tel:+3100000000"
             alt="duplicate even # to get correct telephone number"
-            >+31 000000000</a
+            >+31 6<span class="marker">00000000</span></a
           >
           <p>
             <span class="marker">Xxxxxstraat 1, 1111 XX</span> Amsterdam, The
