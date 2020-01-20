@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="giwan, persaud, resume, not" name="keywords" />
+    <meta content="The online resume of Giwan Persaud." name="description" />
+    <meta content="Resume / CV Giwan Persaud" name="title" />
+    <title>Resume / CV Giwan Persaud</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --unit: 16px;
+        --color-primary: #1a1a1a;
+        --color-secondary: #797979;
+        --color-gray: #e5e5e5;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Roboto Condensed", "Roboto", "sans-serif";
+        margin: 0;
+        padding: 0;
+      }
+
+      .page {
+        border: var(--unit) solid transparent;
+        border-top: 0;
+        max-width: calc(var(--unit) * 50);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 300px 1fr 300px;
+      }
+
+      .page > header {
+        grid-column: 1 / span 8;
+        padding-top: var(--unit);
+      }
+
+      .page > header + aside {
+        grid-column: span 4 / -1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      address,
+      a {
+        text-decoration: none;
+        color: var(--color-primary);
+        font-style: normal;
+      }
+
+      address p {
+        line-height: 1.75em;
+      }
+
+      .marker {
+        background-color: var(--color-gray);
+        color: var(--color-gray);
+      }
+
+      h2 + address {
+        margin-top: var(--unit);
+      }
+
+      h2 + address + p {
+        color: var(--color-secondary);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Sr. Front-end Developer</h1>
+        <h2>Giwan Persaud</h2>
+        <address>
+          <a href="mailto:giwan.persaud@gmail.com">giwan.persaud@gmail.com</a>
+          <a
+            href="tel:+3100000000"
+            alt="duplicate even # to get correct telephone number"
+            >+31 6<span class="marker">00000000</span></a
+          >
+          <p>
+            <span class="marker">Xxxxxstraat 1, 1111 XX</span>
+            Amsterdam, The Netherlands
+          </p>
+        </address>
+        <p>Dutch national born October 10th 1980, <br />Living in Amsterdam</p>
+      </header>
+      <aside>
+        <img
+          src="https://res.cloudinary.com/mytoori/image/upload/c_scale,w_200/v1554037030/42a2d7fd327e612d11d085837069adfc_400x400.jpg"
+          alt="giwan profile image"
+        />
+      </aside>
+    </div>
+  </body>
+</html>

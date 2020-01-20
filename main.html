@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="giwan, persaud, resume, not" name="keywords" />
+    <meta content="The online resume of Giwan Persaud." name="description" />
+    <meta content="Resume / CV Giwan Persaud" name="title" />
+    <title>Resume / CV Giwan Persaud</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --unit: 16px;
+        --color-primary: #1a1a1a;
+        --color-secondary: #797979;
+        --color-gray: #e5e5e5;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Roboto Condensed", "Roboto", "sans-serif";
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 800;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+      }
+
+      h3 {
+        color: var(--color-secondary);
+      }
+
+      h4 {
+        text-transform: uppercase;
+        margin-bottom: calc(var(--unit) / 2);
+        color: var(--color-secondary);
+        font-weight: 300;
+        display: inline-block;
+        border-bottom: 1px solid var(--color-secondary);
+      }
+
+      .page {
+        border: var(--unit) solid transparent;
+        border-top: 0;
+        max-width: calc(var(--unit) * 50);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 300px 1fr 300px;
+      }
+
+      .experience {
+        grid-column: 1 / span 8;
+      }
+
+      main.experience + aside {
+        grid-column: span 4 / -1;
+      }
+
+      .experience header h3 {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+
+      .experience > section {
+        margin-bottom: calc(var(--unit) * 3);
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: calc(var(--unit) * 4) 1fr;
+      }
+
+      .experience > section header {
+        grid-column: span 2;
+      }
+
+      section ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .experience section ul li {
+        margin: 0;
+        padding: 0;
+      }
+
+      .experience section aside {
+        color: var(--color-secondary);
+        font-family: "Roboto Condensed";
+        margin-left: var(--unit);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <main class="experience">
+        <h4>Experience</h4>
+        <section>
+          <header>
+            <h2>Senior Front-end developer</h2>
+            <h3>
+              <a
+                target="_blank"
+                href="https://weeronline.nl"
+                alt="weeronline weather site"
+              >
+                Weeronline.nl
+              </a>
+              | Amsterdam, The Netherlands Oct 2019 - present
+            </h3>
+          </header>
+          <article>
+            Support main site, A/B test new features to improve ad revenue.
+            Investigate loading performance & suggest optimizations
+          </article>
+          <aside>
+            <ul>
+              <li>ReactJS & NodeJS</li>
+              <li>Page speed investigation</li>
+              <li>Server Side Rendering</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <header>
+            <h2>Lead Front-end developer</h2>
+            <h3>
+              <a
+                target="_blank"
+                href="https://edia.nl"
+                alt="bilingual books app"
+              >
+                EDIA.nl</a
+              >
+              | Amsterdam, The Netherlands Sep 2015 - Jul 2019
+            </h3>
+          </header>
+          <article>
+            Architect & develop newsreader for language learners. Coach juniors.
+            Liase with backend, AI and DevOps teams. Proud achievement:
+            papyrus.edia.nl (It also shows off my landing page design)
+          </article>
+          <aside>
+            <ul>
+              <li>ReactJS & NodeJS</li>
+              <li>Chrome extension (react)</li>
+              <li>Docker & Kubernetes</li>
+              <li>Scrum, Jira & Coaching</li>
+              <li>Progressive Web App</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <header>
+            <h2>Founder - Fullstack developer</h2>
+            <h3>
+              <a
+                target="_blank"
+                href="https://mytoori.com"
+                alt="bilingual books app"
+                >Mytoori.com</a
+              >
+              | Amsterdam, The Netherlands Sep 2014 - present
+            </h3>
+          </header>
+          <article>
+            Develop iOS app (Objective-C), Build book management system using
+            React, NodeJS & MongoDB. Coordinate Product marketing. Liase with
+            investors. Explore marketing and advertising opportunities.
+          </article>
+          <aside>
+            <ul>
+              <li>ReactJS & NodeJS</li>
+              <li>MongoDB & Mongoose</li>
+              <li>Progressive Web App</li>
+              <li>Trello Product Management</li>
+              <li>Hosting, Email & DNS</li>
+            </ul>
+          </aside>
+        </section>
+        <hr />
+        <section>
+          <header>
+            <h2>Developer</h2>
+            <h3>
+              Bureau BlauwGeel | Utrecht, Feb 2014 - Aug 2014
+            </h3>
+          </header>
+        </section>
+        <section>
+          <header>
+            <h2>CoFounder - Developer</h2>
+            <h3>
+              Questionise | Amsterdam, 2012 - 2014
+            </h3>
+          </header>
+        </section>
+        <section>
+          <header>
+            <h2>SAP Technical Consultant</h2>
+            <h3>
+              Accenture | Various Euro countries 2004 - 2012
+            </h3>
+          </header>
+        </section>
+      </main>
+      <aside class="page-aside">
+        <section>
+          <h4>Tech skills</h4>
+          <ul class="skills">
+            <li>ReactJS</li>
+            <li>Redux</li>
+            <li>NodeJS</li>
+            <li>PWA</li>
+            <li>Jest</li>
+            <li>Sass</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>ExpressJS</li>
+            <li>Docker</li>
+            <li>MongoDB</li>
+            <li>git</li>
+            <li>GatsbyJS</li>
+          </ul>
+
+          <ul class="skills-2">
+            <li>Objective-c</li>
+            <li>Google apps for business</li>
+            <li>Hosting (Heroku, Zeit, Netlify)</li>
+            <li>DNS Management</li>
+            <li>git (Bitbuket, Github, Gitlab)</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </body>
+</html>
