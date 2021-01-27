@@ -1,0 +1,267 @@
+:root {
+  --unit: 16px;
+  --color-primary: #1a1a1a;
+  --color-secondary: #797979;
+  --color-gray: #e5e5e5;
+}
+
+html,
+body,
+p {
+  padding: 0;
+  margin: 0;
+  color: var(--color-primary);
+  font-family: "Roboto", "Helvetica", "sans-serif";
+  font-size: var(--unit);
+}
+
+p,
+article {
+  line-height: 1.35em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Condensed", "Roboto", "sans-serif";
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  color: var(--color-secondary);
+}
+
+h4 {
+  text-transform: uppercase;
+  margin-bottom: calc(var(--unit) / 2);
+  color: var(--color-secondary);
+  font-weight: 300;
+  display: inline-block;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+address,
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-style: normal;
+}
+
+address p {
+  line-height: 1.75em;
+}
+
+.marker {
+  background-color: var(--color-gray);
+  color: var(--color-gray);
+}
+
+h2 + address {
+  margin-top: var(--unit);
+}
+
+h2 + address + p {
+  color: var(--color-secondary);
+}
+
+.page {
+  border: var(--unit) solid transparent;
+  border-top: 0;
+  max-width: calc(var(--unit) * 50);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 300px 1fr 300px;
+}
+
+.page > header {
+  grid-column: 1 / span 8;
+  padding-top: var(--unit);
+}
+
+.page > header + aside {
+  grid-column: span 4 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.page > header + aside img {
+  margin-top: calc(var(--unit) / 2);
+  border-radius: 50%;
+}
+
+.experience {
+  grid-column: 1 / span 8;
+}
+
+main.experience + aside {
+  grid-column: span 4 / -1;
+}
+
+.experience > section {
+  margin-bottom: calc(var(--unit) * 3);
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: calc(var(--unit) * 4) 1fr;
+}
+
+.experience header h3 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.experience > section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.experience section ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.experience section aside {
+  color: var(--color-secondary);
+  font-family: "Roboto Condensed";
+  margin-left: var(--unit);
+}
+
+.experience > section header {
+  grid-column: span 2;
+}
+
+.experience hr {
+  display: inline-block;
+  width: 50%;
+  border: 1px solid var(--color-gray);
+}
+
+.experience hr ~ section > header {
+  color: var(--color-secondary);
+}
+
+.experience hr ~ section {
+  margin-bottom: 0;
+}
+
+.experience-2 {
+  color: var(--color-secondary);
+}
+.experience-2 section {
+  margin-bottom: calc(var(--unit) / 2);
+}
+
+.experience-2 h2 {
+  font-size: 1em;
+}
+
+/* -------- page aside ----------- */
+
+.page-aside {
+  padding: 0 var(--unit);
+}
+
+.page-aside section {
+  margin-bottom: var(--unit);
+}
+
+.page-aside ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.skills {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+ul.skills-2 {
+  display: block;
+  color: var(--color-secondary);
+  margin-top: var(--unit);
+}
+
+.skills-2 li {
+  display: inline-block;
+}
+
+/* ------------language------------ */
+.language {
+  margin-top: calc(var(--unit) * 6);
+}
+
+/* ------------EDU------------ */
+
+.education {
+  margin-top: calc(var(--unit) * 4);
+}
+
+.education h1 {
+  font-size: 1.25rem;
+}
+.education h2 {
+  margin-top: calc(var(--unit) / 2);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.education section {
+  margin-bottom: var(--unit);
+}
+
+.education ul {
+  display: block;
+  margin-top: var(--unit);
+  color: var(--color-secondary);
+}
+.education li {
+  display: inline-block;
+}
+.education li:not(:last-child):after {
+  content: ",";
+}
+
+/* Footer */
+footer {
+  margin-top: calc(var(--unit) * 2);
+  grid-column: 1 / -1;
+}
+
+footer section ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: "Roboto condensed";
+  background-color: var(--color-gray);
+  border-top: 1px solid var(--color-gray);
+  border-bottom: 1px solid var(--color-gray);
+  font-size: 1.5em;
+}
+
+footer li {
+  display: block;
+  background-color: white;
+  text-align: left;
+  padding: calc(var(--unit) / 2);
+}
+
+footer a {
+  color: var(--color-secondary);
+}
