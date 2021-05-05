@@ -15,4 +15,4 @@ In my spare time I work on [mytoori](https://mytoori.com)
 There are spelling errors. I'll try to fix them but for the most part I'm ok with it. 
 
 I use twitter sparingly - [@giwan](https://twitter.com/giwan)
-Feel free to reachout. 
+Feel free to reach out. 
