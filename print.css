@@ -4,7 +4,7 @@
   --color-secondary: #797979;
   --color-gray: #e5e5e5;
   --font-size-default: 10pt;
-  --font-family:  "Roboto", "Helvetica", "sans-serif";
+  --font-family:  "Helvetica", "Arial", "sans-serif";
 }
 
 html, 
@@ -105,7 +105,7 @@ a {
 }
 
 .experience h4 {
-    font-size: 0.65em;
+    font-size: 0.8em;
     color: var(--color-secondary);
     font-weight: normal; 
     margin-bottom: calc(var(--unit) /2);
@@ -113,9 +113,9 @@ a {
 }
 
 .experience article {
-    width: calc(60% - var(--unit) );
+    width: calc(50% - (var(--unit) *2));
     display: inline-block;
-    margin-right: var(--unit);
+    margin: calc(var(--unit)/2) calc(var(--unit) *2) 0 0;
     font-size: 0.8em;
 }
 
@@ -131,13 +131,14 @@ a {
 
 .experience-2 {
     display: flex;
+    margin-top: var(--unit);
 }
 
 .experience-2 section {
     margin-right: calc(var(--unit) /2);
 }
 
-.experience-2 h2 {
+.experience-2 header h2 {
     font-size: 0.8em;
     font-weight: normal;
 }
@@ -156,6 +157,7 @@ a {
     color: var(--color-secondary);
     font-size: .65em;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .skills, .skills-2 {
@@ -168,11 +170,17 @@ a {
 
 .education h1 {
     font-size: 0.8em;
+    font-weight: normal;
 }
 
 .education h2 {
     font-size: 0.8em;
     color: var(--color-secondary);
+    font-weight: normal;
+}
+
+.education h4 {
+    margin-bottom: calc(var(--unit) /2);
 }
 
 .education li {
@@ -182,9 +190,11 @@ a {
 /* ############  Footer ############ */
 
 footer h4 {
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: normal;
     margin: 0;
+    text-transform: uppercase;
+    color: var(--color-secondary);
 }
 
 footer ul {
