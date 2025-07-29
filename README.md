@@ -1,14 +1,13 @@
 # Hi I'm Giwan
-## Frontend Alchemist in Amsterdam ✨
+## Frontend engineer in Amsterdam ✨
 
-**Turning web chaos into frontend zen, right here in Amsterdam!** | [LinkedIn](http://linkedin.com/in/giwan)
+**I enjoy building web stuff, right here in Amsterdam!** | [LinkedIn](http://linkedin.com/in/giwan)
 
 ## Quick Bytes
 
-* Obsessed with crafting beautiful UIs *and* making messy code sparkle.
-* Ready to bring the frontend finesse to a team nearby.
-* From tricky features to tangled tech debt, I love a good challenge.
-* Always Leveling Up Because the frontend world is a wild ride, and I'm here for it.
+* Obsessed with clean code principles in TS and JS.
+* I follow the developments on many JS frameworks but have my favourites (Remix a.k.a React router v7 and Astro)
+* Always interesting in Leveling Up. The frontend world is a wild ride.
 
 ## My Toolkit
 
