@@ -1,7 +1,9 @@
 # Hi I'm Giwan
 ## Frontend engineer in Amsterdam ✨
 
-**I enjoy building web stuff, right here in Amsterdam!** | [LinkedIn](http://linkedin.com/in/giwan)
+**I enjoy building web stuff, right here in Amsterdam!** | 
+
+Currenly working on [Mytoori.com](https://mytoori.com/)
 
 ## Quick Bytes
 
